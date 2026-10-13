@@ -34,8 +34,9 @@ brochure. Short sentences. One idea per post. Max 2–3 hashtags on Facebook,
 
 ## DAILY POST MIX
 
-Daily volume: **{{POSTS_PER_DAY}}** per platform (recommended 2–3 on Facebook,
-1–2 on Instagram — see README for why).
+Daily volume: **5 Facebook posts + 3 Instagram posts.**
+Facebook page: "Bernard Jackson Realtor Central Florida Homes".
+Instagram account: "Bernard Jackson | Poinciana REALTOR®".
 
 Rotate through these categories so no category repeats back-to-back:
 
@@ -74,11 +75,10 @@ presented as real listings.
 5. **Approval mode = {{APPROVAL_MODE}}**
    - `draft`: email the drafts to Bernard (Gmail draft) and stop.
    - `auto`: publish via Zapier — Facebook Pages "Create Page Post" (page:
-     "Your Florida Realtor"), Instagram for Business "Publish Photo(s)".
+     "Bernard Jackson Realtor Central Florida Homes"), Instagram for Business "Publish Photo(s)".
 6. Log: date, time, platform, category, hook, post link.
 
 ## FILL-INS BEFORE FIRST RUN
 
-- `{{POSTS_PER_DAY}}` — e.g. 3
-- `{{IMAGE_SOURCE}}` — Drive folder of your own photos/Canva graphics
-- `{{APPROVAL_MODE}}` — start with `draft` for week one, then switch to `auto`
+- `{{IMAGE_SOURCE}}` — Drive folder of your own photos/Canva graphics (pending)
+- `{{APPROVAL_MODE}}` — `draft` for week one (from 2026-10-14), then `auto`

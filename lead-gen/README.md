@@ -3,7 +3,7 @@
 Buyer and seller leads from Google search, AI answers (AEO/GEO), and social, all landing in
 Lofty, tracked in one sheet, reviewed every Friday.
 
-Website: bernardsellsflhomes.com (Lofty CMS) · CRM: Lofty · Automation: Zapier · Extra hosting: Netlify
+Website: bernardsellsflhomes.com (Lofty Enterprise via LPT) · Guides on Netlify: renters., villages., davenport., poinciana.bernardsellsflhomes.com · CRM: Lofty · Automation: Zapier
 
 ## Straight talk before you start
 
@@ -40,10 +40,10 @@ LinkedIn                                                                 └─�
 ## 90-day plan
 
 **Weeks 1–2: Foundation (nothing else works without this)**
-1. Set up tracking: Lofty lead sources, UTM rules, Zapier → Google Sheet (`04-tracking.md`).
+1. Set up tracking: Netlify forms → Lofty (Zap 0), fix the Davenport/renters form gaps, Lofty lead sources, UTM rules, Zapier → Google Sheet (`04-tracking.md`).
 2. Google Business Profile fully filled out, 10 photos, first 3 posts (`01`).
 3. Lofty SEO settings: site title, meta descriptions, Featured Areas for all 4 cities (`01`).
-4. Paste the schema code into Lofty (`02`).
+4. Paste the schema code into all 4 Netlify guides (and Lofty, if your broker allows header code) (`02`).
 5. Confirm Smart Plans are on for New Web Buyer and Seller/Home Value leads.
 6. Ask 10 past clients/friends for a Google review (script in `01`).
 

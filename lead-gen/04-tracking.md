@@ -31,6 +31,26 @@ When you add a lead by hand, always pick the source.
 
 ## C. Zapier zaps
 
+**Zap 0 — Netlify form → Lofty lead (most important zap; your guides depend on it)**
+- Trigger: Netlify → *New Form Submission* (one zap per site, or one zap with a filter on form name).
+- Action: Lofty → *Create Lead* with first/last name, email, phone, lead type
+  (Renter for renters., Buyer for relocation guides), **Source = the form's `lead_source` field**,
+  tags from `lead_tags`, and UTM fields + page_url + answers (timeline, situation, language)
+  in the notes.
+- Then Lofty's Smart Plans pick the lead up automatically. Without this zap, Netlify leads sit in
+  Netlify's inbox and nobody follows up.
+- Check first: no zaps are visible yet in the Zapier account connected to Claude. If you set this
+  up another way (Netlify email notifications or a webhook), make sure all 17 existing
+  submissions are actually in Lofty.
+
+**Form gaps found (Oct 18 2026):**
+- `davenport-guide` has **no** `lead_source`, UTM, or `page_url` fields. Add them as hidden
+  fields like the other forms, or every Davenport lead shows up with no source.
+- `renter-guide` (renters.) has no `sms_consent` checkbox. Add an unchecked, optional one —
+  10DLC requires it before Lofty can text these leads. It's also missing `utm_content`.
+- The poinciana. site still carries two old forms (`renter-guide`, `poinciana-village-guide`)
+  with 0 submissions. Harmless, but delete them in Netlify → Forms to keep the data clean.
+
 **Zap 1 — Every new Lofty lead → Google Sheet "Lead Tracker"**
 - Trigger: Lofty → *New Lead* (if the trigger isn't listed, use a Smart Plan with Auto-Apply on
   all lead types whose first step is **Automate → Zapier Zap**).
@@ -82,6 +102,8 @@ Adjust rules of thumb:
 
 ## F. Where Netlify fits
 
-You don't need it for this. Keep lead pages on Lofty so leads go straight into the CRM. Netlify
-is only useful later for a stand-alone tool (e.g. a rent-vs-buy calculator) that links back to a
-Lofty page.
+Netlify guides = your deep content and AEO pages. Lofty = IDX, home value, CRM, follow-up.
+Zap 0 joins them. In the scoreboard, count Netlify leads by their `lead_source` so you can
+compare guide vs. guide (renters vs. villages vs. davenport vs. poinciana).
+Netlify → Forms shows submissions per site — check it during the Friday review against what
+landed in Lofty. If the numbers don't match, Zap 0 is broken.

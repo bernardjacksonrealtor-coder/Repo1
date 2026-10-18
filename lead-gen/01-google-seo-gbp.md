@@ -50,9 +50,10 @@ Reply to every review within 48 hours, mentioning the city ("Glad we got you int
 Path: AOS → **Website** (opens CMS) → Settings → SEO. Classic: Website → Settings → SEO.
 *If the menu doesn't match, Lofty's rollout stage differs — ask Lofty Help.*
 
-Confirm your site tier first: Billing Center → Website. Custom domain + **Full SEO** ($79/mo list)
-is needed for full indexing control. If you're on Vanity ($20/mo), upgrade before investing
-heavily in content, or the pages won't rank as well as they should.
+Your site is on your broker's **Enterprise** Lofty plan, so the SEO tier isn't a cost question.
+The catch: broker-managed sites sometimes lock settings (custom header code, sitemap, Search
+Console verification). If a setting below is greyed out, ask your LPT Lofty admin to unlock it
+for your site, or put that piece on your Netlify subdomains instead (see section C).
 
 ### Site-wide
 - **Site title:** `Bernard Jackson, REALTOR® | Poinciana, Kissimmee & Davenport Homes`
@@ -85,3 +86,27 @@ Also add Featured Areas for: Solivita, ChampionsGate, Storey Lake, Reunion, Laur
 ### What to check monthly in Search Console
 Performance → Queries: which searches show your site. If a query has many impressions but
 position 8–20, improve that page (add an FAQ, more local detail). That's the cheapest win in SEO.
+
+## C. Your Netlify subdomain guides
+
+You already run these on Netlify (17 form submissions so far, as of Oct 18 2026):
+
+| Site | URL | Form | Submissions |
+|---|---|---|---|
+| central-fl-renter-guide | renters.bernardsellsflhomes.com | renter-guide | 6 |
+| poinciana-village-guide | villages.bernardsellsflhomes.com | poinciana-village-guide | 6 |
+| davenport-relocation-guide | davenport.bernardsellsflhomes.com | davenport-guide | 3 |
+| poinciana-relocation-guide | poinciana.bernardsellsflhomes.com | poinciana-guide | 2 |
+
+**Why they matter:** you control 100% of the code there — titles, schema, FAQ markup, speed.
+That makes them your best AEO/GEO pages. Use Lofty for IDX search, home value, and CRM; use
+Netlify for deep guides and question pages.
+
+**SEO rules for subdomains** (Google treats each subdomain as close to a separate site):
+1. Add each subdomain to Google Search Console as its own property and submit its sitemap.
+2. Link both ways: each Netlify guide links to the matching Lofty page (search/home value/booking),
+   and the Lofty site links to each guide from the menu or footer. Without links from the main
+   site, the subdomains rank alone.
+3. Same name, phone, license, and brokerage footer on every guide (Florida advertising rule
+   and GEO consistency).
+4. Don't publish the same article on both Lofty and Netlify — pick one home per topic.

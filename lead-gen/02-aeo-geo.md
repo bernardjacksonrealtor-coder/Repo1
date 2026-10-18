@@ -76,8 +76,9 @@ which pages produce leads.
 ## C. Schema code (tells Google and AI tools exactly who you are)
 
 Paste into Lofty CMS → Website settings → **Custom code / Header scripts** (site-wide).
-*Confirm the exact menu in your Lofty CMS; if there's no header code box, ask Lofty support
-to enable it.*
+On the Enterprise broker plan this box may be locked — ask your LPT Lofty admin. Either way,
+**put it in the `<head>` of every Netlify guide** (renters., villages., davenport., poinciana.),
+where you have full control. On Netlify, also set `"url"` to that guide's address.
 
 ```html
 <script type="application/ld+json">
@@ -171,4 +172,9 @@ your manual test.
 
 - Mass AI-written pages with no local detail — Google and AI tools ignore them.
 - Buying backlinks or "AI SEO" packages. Reviews + real local content win this.
-- `llms.txt` files — Lofty CMS doesn't let you host root files, and no major AI tool relies on it.
+- `llms.txt` files — you *can* host one on your Netlify sites, but no major AI tool relies on it
+  yet. A 10-minute job at most; don't spend more than that.
+
+**Where to publish the 24 question pages:** the deep ones (rent vs. buy, Hometown Heroes, STR
+rules, Poinciana pros/cons) go on the Netlify guide that matches the topic, with FAQ schema.
+Short seller pages that end in a home-value form go on Lofty so the lead lands in the CRM directly.

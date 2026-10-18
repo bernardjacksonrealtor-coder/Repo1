@@ -39,9 +39,9 @@ When you add a lead by hand, always pick the source.
   in the notes.
 - Then Lofty's Smart Plans pick the lead up automatically. Without this zap, Netlify leads sit in
   Netlify's inbox and nobody follows up.
-- Check first: no zaps are visible yet in the Zapier account connected to Claude. If you set this
-  up another way (Netlify email notifications or a webhook), make sure all 17 existing
-  submissions are actually in Lofty.
+- **Status: LIVE since Oct 18 2026** for all 4 guides. Code and links: `../zapier/netlify-to-lofty/`.
+  It only catches new submissions. Of the 17 older ones, only Bilal Majid (villages., Oct 1)
+  looks real — check he's in Lofty; the rest were your tests.
 
 **Form gaps found (Oct 18 2026):**
 - `davenport-guide` has **no** `lead_source`, UTM, or `page_url` fields. Add them as hidden
